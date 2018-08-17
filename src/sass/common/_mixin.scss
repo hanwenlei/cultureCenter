@@ -1,0 +1,18 @@
+@mixin overflow-noScrollBar {
+	overflow-x: scroll;
+	overflow-y: scroll;
+	white-space:nowrap;
+	
+	overflow: -moz-scrollbars-none;
+	-ms-overflow-style: none;
+	&::-webkit-scrollbar{
+		display: none;
+	}
+}
+
+@mixin input-style{
+	border-bottom: 10px solid rgba(0, 0, 0, 0);
+	border-right: 10px solid rgba(0, 0, 0, 0);
+	border-top: 10px solid $base-color;
+	border-left: 10px solid rgba(0, 0, 0, 0);
+}

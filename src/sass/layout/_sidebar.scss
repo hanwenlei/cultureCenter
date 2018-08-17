@@ -1,0 +1,38 @@
+// <div class='container'>
+// 	<div id='sidebar'></div>
+// 	<div id='other'></div>
+// </div>
+
+
+#sidebar{
+	min-width: 130px;
+	width: 20%;
+	margin: 0;
+	background-color: #525256;
+	.lists{
+		background-color: #525256;
+		width: 100%;
+		color: #feffff;
+		margin: 0;
+		padding: 0;
+		text-align: center;
+		.item{
+			list-style-type: none;
+			height: 81px;
+			box-sizing: border-box;
+			padding: 25px 0;
+			border-bottom: 1px solid #7d8586;
+			a{
+				color: #feffff;
+				font-size: 28px;
+				text-decoration: none;
+				font-weight: 300;
+			}
+			&.active{
+				background-color: #7d8586;
+			}
+		}
+
+
+	}
+}

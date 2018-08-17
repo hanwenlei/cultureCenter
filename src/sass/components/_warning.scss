@@ -1,0 +1,20 @@
+#warning {
+	position: fixed;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 10%;
+	height: 48px;
+	line-height: 48px;
+	font-size: 20px;
+	background-color: #6a6d6f;
+	border-radius: 10px;
+	padding: 0px 60px;
+	color: white;
+	opacity: 0;
+	cursor: pointer;
+	will-change: opacity;
+	transition: opacity 1s ease-out;
+	&.active{
+		opacity: 1;
+	}
+}

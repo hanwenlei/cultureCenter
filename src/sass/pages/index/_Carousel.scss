@@ -1,0 +1,41 @@
+#carousel {
+    .opacity{
+        width: 100%;
+        height: 800px;
+        position: relative;
+        margin-top: -800px;
+        background-color: rgba(0,0,0,0.03);
+    }
+    .carousel-inner{
+        transform: translateZ(0);
+    }
+    .org{
+        font-family: titlefont;
+        font-size: 32px;
+        color: #fff;
+    }
+    .school, .sub_org{
+        font-family: titlefont;
+        font-size: 22px;
+        color: #fff;
+    }
+    .carousel-control-prev-icon {
+        background-image: url("../assets/imgs/index/carousel_left.png") !important;
+        height: 55px;
+        width: 28px;
+    }
+
+    .carousel-control-next-icon {
+        background-image: url("../assets/imgs/index/carousel_right.png") !important;
+        height: 55px;
+        width: 28px;
+    }
+    .carousel-indicators{
+        cursor: pointer;
+    }
+
+    .carousel-caption{
+        bottom: 50%;
+        transform: translateY(50%);
+    }
+}

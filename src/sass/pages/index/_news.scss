@@ -1,0 +1,171 @@
+#news {
+  @import '../../components/header';
+  position: relative;
+  // background:transparent center no-repeat;
+  // background-size:cover;
+  // background:transparent !important;
+   height: auto;
+
+  // background-color: white;
+  // background-image: url('../assets/imgs/index/bg_fixed_up.jpg');
+  // background-size: 100% 100%;
+  // background-attachment: fixed;
+  // background-repeat: no-repeat;
+
+  // &::before{
+  // 	content:'';
+  // 	position: fixed;
+  // 	width: 100%;
+  // 	height: 100%;
+  // 	left: 0;
+  // 	top: 0;
+  // 	z-index: -3;
+  // 	background-color: white;
+  // 	background-image: url('../assets/imgs/index/bg_fixed_up.jpg');
+  // 	background-size: cover;
+  // }
+  //.opacity{
+  //  //opacity: 0.5;
+  //  width: 100%;
+  //  height: 1178px;
+  //  margin:  auto;
+  //  margin-top: -230px;
+  //  background-color: rgba(128,128,128,0.75);
+  //}
+  .list-container {
+    position: relative;
+    max-height: calc(100% - 300px);
+    //margin-top: -950px;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none;
+    &::-webkit-scrollbar{
+      width: 0 !important;
+    }
+
+    .lists {
+      z-index: 1;
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      align-content: center;
+      width: 77.5%;
+      opacity: 0.8;
+      margin: 0 auto;
+      .item {
+        cursor: pointer;
+        border: 1px solid white;
+        position: relative;
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+        align-content: center;
+        background-color: rgba(255, 255, 255, 0.5);
+        padding: 40px 0 40px;
+        z-index: 10;
+        transition: transform 0.5s,
+        background-color 0.5s,
+        opacity 0.5s,
+        border 0.5s;
+
+        &:hover {
+          transform: translate3d(-64px, 0, 0);
+          background-color: rgba(255, 255, 255, 0);
+          border-color: rgba(0, 0, 0, 0);
+
+          .date {
+            .month {
+              color: #fff;
+            }
+            .year {
+              color: #fff;
+            }
+          }
+          .content {
+            .caption {
+              color: #fff;
+            }
+            .detail {
+              color: #fff;
+            }
+          }
+          .arrow_container {
+            opacity: 1;
+          }
+        }
+        .date {
+          display: flex;
+          flex-flow: row;
+          margin-right: 7%;
+          height: 108px;
+          line-height: 108px;
+          .month {
+            font-size: 22px;
+            color: #0b1a23;
+          }
+
+          .year {
+            font-size: 11px;
+            color: #324d5c;
+            padding: 5px 0 0 2px;
+            box-sizing: border-box;
+          }
+        }
+
+        .thumbnail {
+          margin-right: 24px;
+          width: 144px;
+          height: 108px;
+        }
+
+        .content {
+          display: flex;
+          flex-flow: column;
+          color: #fff;
+          .caption {
+            font-size: 16px;
+            color: #0b1a23;
+            margin-top: 12px;
+          }
+
+          .detail {
+            margin-top: 24px;
+            max-width: 600px;
+            font-size: 12px;
+            color: #324d5c;
+          }
+        }
+
+        .arrow_container {
+          display: flex;
+          flex-flow: column;
+          justify-content: center;
+          margin-left: 44px;
+          opacity: 0;
+          display: flex;
+          .arrow {
+            height: 26px;
+            width: 15px;
+          }
+        }
+      }
+    }
+  }
+  @import '../../components/index-readmore';
+  /*relative to bgFix.scss*/
+  //@media screen and (max-height: 1024px) and (min-height: 960px) {
+  //	height: 130%;
+  //}
+  //
+  //@media screen and (max-height: 960px) and (min-height: 860px) {
+  //	height: 140%;
+  //}
+  //
+  //@media screen and (max-height: 860px) and (min-height: 800px) {
+  //	height: 150%;
+  //}
+  //
+  //@media screen and (max-height: 800px){
+  //	height: 160%;
+  //}
+}

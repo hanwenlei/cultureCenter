@@ -1,0 +1,74 @@
+@import './common/variables';
+@import './common/common';
+
+@import './layout/navigator';
+@import './layout/sidebar';
+
+@import './components/warning';
+
+.container{
+	position: relative;
+	height: 100%;
+	display: flex;
+	flex-flow: row;
+	justify-content: flex-start;
+	@import './layout/sidebar';
+	input{
+		height: 58px;
+		border-radius: 5px;
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		font-size: 18px;
+		padding-left: 15px;
+	}
+	::-webkit-input-placeholder {
+		color: #525256;
+		font-size: 18px;
+	}
+	:-moz-placeholder {/* Firefox 18- */
+		color: #525256;
+		font-size: 18px;
+	}
+	::-moz-placeholder{/* Firefox 19+ */
+		color: #525256;
+		font-size: 18px;
+	}
+	:-ms-input-placeholder {
+		color: #525256;
+		font-size: 18px;
+	}
+	#accountInfo{
+		position: relative;
+		display: flex;
+		flex-flow: column;
+		align-items: center;
+		width: 100%;
+		
+		.panel{
+			display: flex;
+			flex-flow: column;
+			width: 32.28%;
+			margin-top: 162px;
+			.new_password{
+				margin-top: 15px
+			}
+			.botton{
+				width: 72%;
+				margin: 0 auto;
+				text-align: center;
+				margin-top: 72px;
+				.submit{
+					color: white;
+					background-color: $base-color;
+					width: 100%;
+					height: 51px;
+					line-height: 51px;
+					border-radius: 5px;
+					cursor: pointer;
+					font-size: 18px;
+				}
+			}
+		}
+	}
+}

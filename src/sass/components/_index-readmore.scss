@@ -1,0 +1,28 @@
+.read_more {
+	text-align: center;
+	padding: 64px 0 80px 0;
+	cursor: pointer;
+	.readmore_button{
+		background-color: $base-color;
+		width: 180px;
+		height: 37px;
+		line-height: 37px;
+		margin: 0 auto;
+		border-radius: 50px;
+		color: #fff;
+		font-size: 14px;
+		border: 1px solid rgba(0,0,0,0);
+
+		transition: color 0.5s,
+					background-color 0.5s,
+					border 0.5s;
+		.line{
+			padding: 0 10px 0;
+		}
+		&:hover{
+			border: 1px solid  $base-color;
+			color: $base-color;
+			background-color: rgba(0,0,0,0);
+		}
+	}
+}

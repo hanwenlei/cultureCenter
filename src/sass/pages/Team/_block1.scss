@@ -1,0 +1,133 @@
+@keyframes teamImgAnimation{
+    from {
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.05);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
+
+#block1, #block2{
+    @import "./components/header";
+    .content {
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+        background-color: #fff;
+        .item {
+           display: flex;
+           flex-flow: column;
+           margin: 20px;
+           padding: 87px 40px 100px;
+           width: 23.96%;
+           position: relative;
+           cursor: pointer;
+           &.active{
+            z-index: 1;
+        }
+        &.one, &.two, &.three {
+            background-position: center;
+            background-size: 100% 100%;
+            overflow: hidden;
+
+            &:hover {
+                &::before {
+                    filter: opacity(0);
+                }
+
+                &::after {
+                    transform: translate(0, -114px);
+                }
+
+                .article_container {
+                    transform: translate(0, -20px);
+
+                    .intro {
+                        border-bottom: 1px solid rgba(0, 0, 0, 0);
+                    }
+                }
+                img{
+                    animation-play-state: running;
+                }
+            }
+
+            &::before {
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                z-index: 2;
+                transition: filter 0.5s;
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 114px;
+                top: 100%;
+                left: 0;
+                background-color: rgba(255, 255, 255, 0.6);
+                z-index: 2;
+                transition: transform 0.5s;
+            }
+            img{
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                left: 0;
+                top: 0;
+                z-index: 1;
+                animation: teamImgAnimation 5s infinite;
+                animation-play-state: paused;
+            }
+        }
+        &.one {
+            &::before {
+                background-color: #f36b77;
+            }
+        }
+
+        &.two {
+            &::before {
+                background-color: #82bf6e;
+            }
+        }
+
+        &.three {
+            &::before {
+                background-color: #f3a32a;
+            }
+        }
+
+        .article_container {
+            position: relative;
+            transition: transform 0.5s;
+            overflow: hidden;
+            z-index: 3;
+            .title {
+                color: #fff;
+                font-size: 16px;
+            }
+
+            .time {
+                color: #eff4f6;
+                font-size: 12px;
+            }
+
+            .intro {
+                color: #eff4f6;
+                font-size: 12px;
+                padding-bottom: 48px;
+                border-bottom: 1px solid white;
+            }
+        }
+    }
+}
+}

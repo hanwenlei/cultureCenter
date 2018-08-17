@@ -1,0 +1,242 @@
+@import "./common/variables";
+@import "./layout/navigator";
+
+@import "./common/common";
+@import "./components/warning";
+body {
+    background-color: #f1f1f1;
+    height: auto;
+}
+
+.container {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-start;
+
+    @import "./layout/sidebar";
+
+    input, .selector {
+        height: 40px;
+        border-radius: 5px;
+        margin: 0;
+        padding: 0;
+        padding-left: 10px;
+        width: 100%;
+        font-size: 20px;
+        box-sizing: border-box;
+    }
+
+    #review {
+        position: relative;
+        transform: translate(0, 0);
+        width: 60%;
+        margin: 60px 0 0 10%;
+        display: flex;
+        flex-flow: column;
+        .breadcrumb {
+            color: $base-color;
+            font-size: 30px;
+            display: flex;
+            flex-flow: row;
+            justify-content: flex-start;
+
+            .arrow {
+                width: 48px;
+                height: 48px;
+                display: inline-block;
+                margin-right: 30px;
+                cursor: pointer;
+                background-image: url("../assets/imgs/BE_view/arrow.png");
+                background-repeat: no-repeat;
+            }
+        }
+
+        .title, .info, .otherInfo {
+            font-size: 24px;
+            color: #373737;
+            display: flex;
+            flex-flow: row;
+            align-items: center;
+        }
+
+        .title {
+            margin-top: 55px;
+
+            span {
+                flex: 80px;
+            }
+        }
+
+        .info, .otherInfo {
+            margin-top: 16px;
+        }
+
+        .info {
+            display: flex;
+            flex-flow: row;
+
+            .author, .img_author, .department {
+                width: 32%;
+                display: flex;
+                flex-flow: row;
+                justify-content: flex-start;
+                align-items: flex-start;
+            }
+
+            .img_author {
+                box-sizing: border-box;
+                margin: 0 2%;
+                width: 36%;
+
+                span {
+                    min-width: 120px;
+                }
+            }
+
+            span {
+                min-width: 73px;
+            }
+        }
+
+        .otherInfo {
+            display: flex;
+            flex-flow: row;
+
+            .newsType, .mainBody {
+                width: 50%;
+                display: flex;
+                flex-flow: row;
+                justify-content: flex-start;
+                align-items: flex-start;
+                position: relative;
+                box-sizing: border-box;
+
+                span {
+                    min-width: 120px;
+                }
+
+                &.active {
+                    &::before {
+                        display: none;
+                    }
+
+                    &::after {
+                        display: block;
+                    }
+                }
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    z-index: 9999;
+                    cursor: pointer;
+                    top: 40%;
+                    right: 20px;
+                    width: 0px;
+                    height: 0px;
+                    border-bottom: 10px solid rgba(0, 0, 0, 0);
+                    border-right: 10px solid rgba(0, 0, 0, 0);
+                    border-top: 10px solid $base-color;
+                    border-left: 10px solid rgba(0, 0, 0, 0);
+                }
+
+                &::after {
+                    display: none;
+                    content: '';
+                    position: absolute;
+                    z-index: 9999;
+                    right: 20px;
+                    cursor: pointer;
+                    top: 10%;
+                    width: 0px;
+                    height: 0px;
+                    border-top: 10px solid rgba(0, 0, 0, 0);
+                    border-right: 10px solid rgba(0, 0, 0, 0);
+                    border-bottom: 10px solid $base-color;
+                    border-left: 10px solid rgba(0, 0, 0, 0);
+                }
+
+                .selector {
+                    cursor: pointer;
+                    position: relative;
+
+                    input {
+                        cursor: pointer;
+                    }
+
+                    .lists {
+                        &.active {
+                            display: block;
+                        }
+
+                        text-align: center;
+                        display: none;
+                        position: absolute;
+                        top: 100%;
+                        width: 100%;
+                        margin: 0;
+                        padding: 0;
+                        background: white;
+                        z-index: 10002;
+
+                        .item {
+                            padding: 5px 0;
+                            cursor: pointer;
+                            list-style-type: none;
+                            border-bottom: 1px solid black;
+                            border-left: 1px solid black;
+                            border-right: 1px solid black;
+
+                            &:nth-child(odd) {
+                                background-color: #f1f1f1;
+                            }
+
+                            &:first-child {
+                                border-top: 1px solid black;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .mainBody {
+                padding-left: 2%;
+            }
+        }
+
+        .article {
+            margin-top: 32px;
+        }
+
+        .buttons {
+            margin: 45px 0 167px;
+            display: flex;
+            flex-flow: row;
+            justify-content: space-around;
+
+            .pass, .return, .submit {
+                width: 30.8%;
+                text-align: center;
+                height: 51px;
+                font-size: 18px;
+                line-height: 51px;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+
+            .pass, .submit {
+                background-color: $base-color;
+                color: white;
+            }
+
+            .return {
+                border: 2px solid $base-color;
+                color: $base-color;
+            }
+        }
+
+
+    }
+}

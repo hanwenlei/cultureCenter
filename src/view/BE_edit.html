@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<!-- <div id='bgFixedImg1'></div> -->
+	<nav id="navigator">
+		<div class="left">
+			<div class="logo_container">
+				<img src="../assets/imgs/index/LOGO.png" alt="">
+			</div>
+			<div class="title_container">
+				<div class="school_name">电子科技大学</div>
+				<div class="org_name">大学生文化素质教育中心</div>
+				<div class="alias_name">(国家大学生文化素质教育基地)</div>
+			</div>
+		</div>
+		<div class="right">
+			<div class="exit">退出</div>
+		</div>
+	</nav>
+
+	<div class="container">
+		<div id="sidebar">
+			<ul class="lists">
+				<li class="item active"><a href="./BE_edit.html">编辑稿件</a></li>
+			</ul>
+		</div>
+
+		<div id="edit">
+			<div class="title">
+				<span>标题：</span>
+				<input type="text">
+			</div>			
+			<div class="info">
+				<div class="author">
+					<span>作者：</span>
+					<input type="text">
+				</div>
+				<div class="img_author">
+					<span>照片作者：</span>
+					<input type="text">
+				</div>
+				<div class="department">
+					<span>部门：</span>
+					<input type="text">
+				</div>
+			</div>
+			<div class="otherInfo">
+				<div class="newsType">
+					<span>新闻类型：</span>
+					<div class="selector">
+						<input type="text" readonly="readonly">
+						<ul class="lists">	
+							<li class="item" data-id='0'>新闻公告</li>
+							<li class="item" data-id='1'>精彩回顾</li>
+							<li class="item" data-id='2'>活动预告</li>
+						</ul>	
+					</div>
+				</div>
+				<div class="mainBody">
+					<span>涉及主体：</span>
+					<div class="selector">
+						<input type="text" readonly="readonly">
+						<ul class="lists">	
+							<li class="item" data-id='0'>成电辩坛</li>
+							<li class="item" data-id='1'>成电舞台</li>
+							<li class="item" data-id='2'>成电故事</li>
+							<li class="item" data-id='3'>成电影院</li>
+							<li class="item" data-id='4'>成电栋梁</li>
+							<li class="item" data-id='5'>成电讲坛</li>
+							<li class="item" data-id='6'>成电百家</li>
+							<li class="item" data-id='7'>其他</li>
+						</ul>	
+					</div>
+				</div>
+			</div>	
+			<div id="warning"></div>
+
+			<div class="article" id="editor"></div>
+
+			<div class="buttons">
+				<div class="submit">投&nbsp;&nbsp;稿</div>
+			</div>
+
+		</div>	
+
+	</div>		
+
+	<script type="text/javascript" src="../js/lib/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="../js/lib/wangEditor-3.0.16/release/wangEditor.min.js"></script>
+</body>
+</html>

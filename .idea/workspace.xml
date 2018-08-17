@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="991ed966-c8c3-4cb9-8dc5-e2247c0bd68f" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dist/view/BE_accountInfo.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/dist/view/BE_accountInfo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dist/view/BE_articleList.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/dist/view/BE_articleList.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dist/view/BE_carousel.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/dist/view/BE_carousel.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dist/view/BE_edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/dist/view/BE_edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dist/view/BE_review.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/dist/view/BE_review.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dist/view/Team.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/dist/view/Team.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dist/view/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/dist/view/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dist/view/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/dist/view/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dist/view/mediaLib.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/dist/view/mediaLib.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/webpack.dev.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/webpack.dev.conf.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/BE_accountInfo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/BE_articleList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/BE_articleList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/BE_carousel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/BE_carousel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/BE_edit.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/BE_edit.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/BE_review.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/BE_review.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/Team.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/Team.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/common/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/common/common.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/mediaLib.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/mediaLib.js" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="BE_carousel.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/view/BE_carousel.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="367">
+              <caret line="60" column="69" selection-start-line="60" selection-start-column="69" selection-end-line="60" selection-end-column="69" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="webpack.common.conf.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/build/webpack.common.conf.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="283">
+              <caret line="43" selection-start-line="40" selection-start-column="41" selection-end-line="40" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>height</find>
+      <find>744</find>
+      <find>news</find>
+      <find>120%</find>
+      <find>article</find>
+      <find>80%</find>
+      <find>88</find>
+      <find>32px</find>
+      <find>1366</find>
+      <find>hash</find>
+      <find>content</find>
+      <find>contenthash</find>
+      <find>3.png</find>
+      <find>4.</find>
+      <find>1.p</find>
+      <find>2.</find>
+      <find>5.</find>
+      <find>6.</find>
+      <find>9.</find>
+      <find>ajax</find>
+    </findStrings>
+    <dirStrings>
+      <dir>C:\Users\user\Desktop\cultureCenter\src</dir>
+      <dir>C:\Users\user\Desktop\cultureCenter\src\js</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/sass/BE_articleList.scss" />
+        <option value="$PROJECT_DIR$/src/view/login.html" />
+        <option value="$PROJECT_DIR$/src/sass/pages/index/_Team.scss" />
+        <option value="$PROJECT_DIR$/src/view/index.html" />
+        <option value="$PROJECT_DIR$/src/sass/pages/index/_Institution.scss" />
+        <option value="$PROJECT_DIR$/src/sass/layout/_bgFix.scss" />
+        <option value="$PROJECT_DIR$/src/sass/common/_common.scss" />
+        <option value="$PROJECT_DIR$/src/sass/pages/index/_news.scss" />
+        <option value="$PROJECT_DIR$/src/sass/pages/index/_display.scss" />
+        <option value="$PROJECT_DIR$/src/view/mediaLib.html" />
+        <option value="$PROJECT_DIR$/build/webpack.common.conf.js" />
+        <option value="$PROJECT_DIR$/build/webpack.prod.conf.js" />
+        <option value="$PROJECT_DIR$/src/js/login.js" />
+        <option value="$PROJECT_DIR$/src/js/common/common.js" />
+        <option value="$PROJECT_DIR$/build/webpack.dev.conf.js" />
+        <option value="$PROJECT_DIR$/src/view/BE_carousel.html" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBowerSettings">
+    <node-interpreter value="project" />
+    <exe-path />
+    <config-path />
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER">
+    <package-json value="$PROJECT_DIR$/package.json" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <annotation-enable>false</annotation-enable>
+    <other-services-enabled>true</other-services-enabled>
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/node_modules" />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="113" />
+    <option name="y" value="564" />
+    <option name="width" value="1543" />
+    <option name="height" value="994" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Vue</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>VueDuplicateTag</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="cultureCenter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cultureCenter" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
+    <property name="SearchEverywhereHistoryKey" value="displa&#9;FILE&#9;file://C:/Users/user/Desktop/cultureCenter/src/sass/pages/index/_display.scss&#10;dis&#9;FILE&#9;file://C:/Users/user/Desktop/cultureCenter/build/dist.zip&#10;index&#9;FILE&#9;file://C:/Users/user/Desktop/cultureCenter/src/sass/index.scss&#10;bgF&#9;FILE&#9;file://C:/Users/user/Desktop/cultureCenter/src/sass/layout/_bgFix.scss&#10;display&#9;FILE&#9;file://C:/Users/user/Desktop/cultureCenter/src/sass/pages/index/_display.scss&#10;_new&#9;FILE&#9;file://C:/Users/user/Desktop/cultureCenter/src/sass/pages/index/_news.scss" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.prettier" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.jscs" value="project" />
+    <property name="node.js.path.for.package.prettier" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.selected.package.eslint" value="C:\Users\user\AppData\Roaming\npm\node_modules\eslint" />
+    <property name="node.js.selected.package.jscs" value="" />
+    <property name="node.js.selected.package.prettier" value="" />
+    <property name="node.js.selected.package.standard" value="C:\Users\user\AppData\Roaming\npm\node_modules\eslint" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="C:/Program Files/nodejs/node" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="settings.javascript.linters.eslint" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\user\Desktop\cultureCenter\src\js" />
+      <recent name="C:\Users\user\Desktop\cultureCenter\src\js\pages" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="npm.dev">
+    <configuration name="build" type="js.build_tools.npm" factoryName="npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+    </configuration>
+    <configuration name="dev" type="js.build_tools.npm" factoryName="npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+    </configuration>
+    <list>
+      <item itemvalue="npm.dev" />
+      <item itemvalue="npm.build" />
+    </list>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="991ed966-c8c3-4cb9-8dc5-e2247c0bd68f" name="Default" comment="" />
+      <created>1523780874001</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1523780874001</updated>
+      <workItem from="1523780889283" duration="1966000" />
+      <workItem from="1526286062175" duration="9484000" />
+      <workItem from="1526348869120" duration="625000" />
+      <workItem from="1526466733010" duration="4464000" />
+      <workItem from="1526480232645" duration="1283000" />
+      <workItem from="1526530643755" duration="37000" />
+      <workItem from="1526630040223" duration="2112000" />
+      <workItem from="1526639264747" duration="30000" />
+      <workItem from="1526639452961" duration="2977000" />
+      <workItem from="1526891131891" duration="1731000" />
+    </task>
+    <task id="LOCAL-00001" summary="20180516">
+      <created>1526466801782</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1526466801782</updated>
+    </task>
+    <task id="LOCAL-00002" summary="20180516">
+      <created>1526468398550</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1526468398550</updated>
+    </task>
+    <task id="LOCAL-00003" summary="20180516">
+      <created>1526481087866</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1526481087866</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="24709000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="113" y="564" width="1543" height="994" extended-state="1" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13687707" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5023256" side_tool="true" visible="true" weight="0.32748538" />
+      <window_info id="npm" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4976744" weight="0.348538" />
+      <window_info anchor="bottom" id="Version Control" order="11" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.4976744" visible="true" weight="0.32748538" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Remote Host" order="3" weight="0.32955772" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="REST Client" order="9" weight="0.3299389" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="File Transfer" order="8" visible="true" weight="0.3299389" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.33095723" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="20180516" />
+    <option name="LAST_COMMIT_MESSAGE" value="20180516" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/view/BE_carousel.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="367">
+          <caret line="60" column="69" selection-start-line="60" selection-start-column="69" selection-end-line="60" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.git/config">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="12" column="29" lean-forward="true" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/webpack.common.conf.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="43" selection-start-line="40" selection-start-column="41" selection-end-line="40" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

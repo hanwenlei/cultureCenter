@@ -1,0 +1,136 @@
+@import "./common/variables";
+@import "./common/common";
+@import "./common/mixin";
+
+@import "./layout/navigator";
+@import "./layout/sidebar";
+@import "./components/warning";
+
+body{
+    height: auto;
+}
+#warning{
+    bottom: 18%;
+}
+.container {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-start;
+    background-color: #f1f1f1;
+    min-height: 884px;
+
+    @import "./layout/sidebar";
+
+    input {
+        height: 40px;
+        border-radius: 5px;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    #articleList {
+        transform: translate(0,0);
+        margin: 81px 0 0 9%;
+        display: flex;
+        flex-flow: column;
+        text-align: center;
+        position: relative;
+
+        /*min-width: 1151px;*/
+        min-width: 65%;
+
+        .table_title {
+            border-top: 1px dashed black;
+            background-color: #eee;
+        }
+
+        .table_title, .table_body {
+            font-weight: 600;
+            display: flex;
+            flex-flow: column;
+            font-size: 20px;
+            color: #373737;
+
+            .item {
+                border-left: 1px dashed black;
+                border-right: 1px dashed black;
+                display: flex;
+                flex-flow: row;
+                height: 55px;
+                line-height: 55px;
+
+                .title {
+                    flex: 563;
+                    padding: 0 10px 0;
+                }
+
+                .contributor {
+                    flex: 141;
+                }
+
+                .date {
+                    flex: 194;
+                }
+
+                .status {
+                    flex: 140;
+                }
+
+                .operation {
+                    flex: 120;
+                }
+
+                .title, .contributor, .date, .status {
+                    border-right: 1px solid black;
+
+                    @include overflow-noScrollBar;
+                }
+
+                &:nth-child(even) {
+                    background-color: #eee;
+                }
+            }
+        }
+
+        .table_body {
+            .item {
+                &:last-child {
+                    border-bottom: 1px dashed black;
+                }
+
+                .operation {
+                    color: $base-color;
+                    .review, .delete{
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+        .table_selector {
+            padding: 60px 0 75px;
+            font-size: 20px;
+            display: flex;
+            flex-flow: row;
+            justify-content: center;
+            span {
+                background: white;
+                display: inline-block;
+                padding: 5px 12px;
+                border: 1px solid #e7e7e7;
+                border-radius: 5px;
+                margin: 0 5px;
+                cursor: pointer;
+
+                &.selected {
+                    background-color: rgba(0, 0, 0, 0);
+                    border: 0;
+                    color: $base-color;
+                }
+            }
+        }
+    }
+}

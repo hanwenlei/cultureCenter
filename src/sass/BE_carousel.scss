@@ -1,0 +1,183 @@
+@import './common/variables';
+@import './common/variables';
+@import './common/common';
+@import './common/mixin';
+
+@import './layout/navigator';
+
+@import './components/warning';
+
+body{
+	background-color: #f1f1f1;
+	height: auto;
+}
+.container{
+	.upload_button{
+		position:fixed;
+		bottom: 40px;
+		right: 20px;
+		cursor: pointer;
+		display: flex;
+		flex-flow: row;
+		justify-content: flex-start;
+		#plus_icon{
+			height: 40px;
+			width: 40px;
+			cursor: pointer;	
+		}
+		#upload_icon{
+			height: 43px;
+			width: 43px;
+			cursor: pointer;
+			margin-left: 10px;
+		}
+		.fileReader{
+			position: absolute;
+			left: 0;
+			top: 0;
+			height: 40px;
+			width: 40px;
+			opacity: 0;
+			cursor: pointer;
+		}
+	}
+
+	position: relative;
+	height: 100%;
+	display: flex;
+	flex-flow: row;
+	justify-content: flex-start;
+	@import './layout/sidebar';
+	#carousel_setting{
+		margin-top: 60px;
+		display: flex;
+		flex-flow: column;
+		margin-bottom: 200px;
+		/*justify-content: center;*/
+		align-items: center;
+		.item{
+			margin-top: 19px;
+			background-color: #fff;
+			width: 70%;
+			min-height: 180px;
+			min-width: 885px;
+			display: flex;
+			flex-flow: row;
+			justify-content: space-between;
+			.thumbnail{
+				position: relative;
+				margin: 12px;
+				height: 157px;
+				width: 280px;
+				min-width: 200px;
+				>img{
+					width: 100%;
+					height: 100%;
+					cursor: pointer;
+				}
+				.lists{
+					@include overflow-noScrollBar;
+					white-space: nowrap;
+					/*display: none;*/
+					opacity: 0;
+					z-index: 9999;
+					position: absolute;
+					width: 250%;
+					height: 50%;
+					padding: 0;
+					margin: 0;
+					right: -250%;
+					margin-right: -6px;
+					top: 50%;
+					overflow: hidden;
+					overflow-x: scroll;
+					list-style-type: none;
+					transition: opacity 0.4s ease-in;
+					&::after{
+						position: absolute;
+						background-color: white;
+						width: 200%;
+						height: 100%;
+						content: '';
+						top: 0;
+						left: 0;
+						transition: transform 0.2s ease-in;
+					}
+					&.active{
+						opacity: 1;
+						&::after{
+							transform: rotateY(90deg);
+
+						}
+					}
+					.img_list{
+						display: inline-block;
+						width: 20%;
+						height: 100%;
+						position: relative;
+						padding: 0;
+						margin: 0;
+						img{
+							width:100%;
+							height: 100%;
+						}
+						.delete{
+							position: absolute;
+							color: $base-color;
+							height: 20px;
+							width: 20px;
+							right: 0;
+							top: 0;
+							cursor: pointer;
+							font-weight: 900;
+							cursor: pointer;
+						}
+					}
+				}
+			}
+			.right{
+				display: flex;
+				flex-flow: column;
+				.thumbnail_url{
+					width: 720px;
+					margin-top: 37px;
+					display: flex;
+					flex-flow: row;
+					align-items: center;
+					.link{
+						font-size: 18px;
+						color: #373737;
+						margin-left: 3%;
+					}
+					.input{
+						height: 34px;
+						line-height: 34px;
+						width: 78%;
+						border-radius: 5px;
+						margin-right: 6.5%;
+						border: 1px solid black;
+						
+						@include overflow-noScrollBar;
+					}
+				}
+				.bottom{
+					width: 720px;
+					display: flex;
+					flex-flow: row;
+					justify-content: flex-end;
+					.submit{
+						margin-right: 11.11%;
+						margin-top: 46px;
+						color: white;
+						background-color: $base-color;
+						border-radius: 50px;
+						padding: 5px 30px;
+						font-size: 14px;
+						cursor: pointer;
+					}
+				}
+			}
+		}
+	}
+
+}
