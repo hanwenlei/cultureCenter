@@ -2,11 +2,11 @@ if (process.env.NODE_ENV !== 'production') {
 	require('../view/BE_articleList.html')
 }
 
-import '../sass/BE_articleList.scss';
+import '../sass/BE_articleList.scss'
 
-import common from './common/common.js';
-import './components/navigator.js';
-import warning from './function/warning.js';
+import common from './common/common.js'
+import './components/navigator.js'
+import warning from './function/warning.js'
 
 $(document).ready(function() {
 	var page = 1,

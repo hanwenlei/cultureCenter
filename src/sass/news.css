@@ -1,0 +1,68 @@
+#news-content {
+  width: 80%;
+  margin: auto;
+  box-sizing: border-box;
+  overflow: hidden; }
+  #news-content #news-title {
+    width: 66%;
+    float: left; }
+    #news-content #news-title .title {
+      font-size: larger;
+      margin-left: 5px;
+      border-bottom: 2px solid #EAEAEA;
+      height: 35px;
+      line-height: 35px;
+      font-weight: 600; }
+      #news-content #news-title .title span {
+        color: red;
+        font-weight: 900;
+        font-stretch: ultra-expanded;
+        text-shadow: 2px 1px 2px;
+        margin-right: 3px; }
+    #news-content #news-title .details {
+      overflow: hidden;
+      font-size: smaller; }
+      #news-content #news-title .details .author, #news-content #news-title .details .pic-author, #news-content #news-title .details .gover {
+        font-weight: 600;
+        margin-right: 20px; }
+      #news-content #news-title .details em {
+        color: #ECA08F; }
+      #news-content #news-title .details .date, #news-content #news-title .details .click-rate {
+        font-weight: 300;
+        margin-right: 5px;
+        float: right; }
+  #news-content #content {
+    width: 66%;
+    float: left; }
+  #news-content #list {
+    width: 30%;
+    float: right;
+    overflow: hidden; }
+    #news-content #list #right {
+      overflow: hidden;
+      background-color: #db4520;
+      padding: 50px 15px 40px;
+      margin-left: 5px; }
+      #news-content #list #right .logo {
+        float: left;
+        width: 30%; }
+      #news-content #list #right .title {
+        float: right;
+        color: white;
+        width: 60%; }
+    #news-content #list #type-title {
+      background-color: #434343;
+      margin-left: 5px; }
+      #news-content #list #type-title ul {
+        list-style: none;
+        padding-left: 0; }
+        #news-content #list #type-title ul li {
+          height: 30px;
+          line-height: 30px;
+          padding-left: 20px;
+          cursor: pointer; }
+          #news-content #list #type-title ul li:first-child {
+            background-color: #db4520;
+            text-align: center; }
+
+/*# sourceMappingURL=news.css.map */

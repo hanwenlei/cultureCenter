@@ -1,0 +1,109 @@
+
+@import "./common/mixin";
+#content {
+  transform: translate(0, 0);
+  margin: 81px 0 0 9%;
+  display: flex;
+  flex-flow: column;
+  text-align: center;
+  position: relative;
+
+  /*min-width: 1151px;*/
+  min-width: 65%;
+
+  .table_title {
+    border-top: 1px dashed black;
+    background-color: #eee;
+  }
+  .table_title, .table_body {
+    font-weight: 600;
+    display: flex;
+    flex-flow: column;
+    font-size: 20px;
+    color: #373737;
+
+    .item {
+      border-left: 1px dashed black;
+      border-right: 1px dashed black;
+      display: flex;
+      flex-flow: row;
+      height: 55px;
+      line-height: 55px;
+
+      .title {
+        flex: 563;
+        padding: 0 10px 0;
+      }
+
+      .contributor {
+        flex: 141;
+      }
+
+      .date {
+        flex: 194;
+      }
+
+      .status {
+        flex: 140;
+      }
+
+      .operation {
+        flex: 120;
+      }
+
+      .title, .contributor, .date, .status {
+        border-right: 1px solid black;
+
+        @include overflow-noScrollBar;
+      }
+
+      &:nth-child(even) {
+        background-color: #eee;
+      }
+    }
+  }
+
+  .table_body {
+    .item {
+      &:last-child {
+        border-bottom: 1px dashed black;
+      }
+
+      .operation {
+        color: #DB4520;
+        .review, .delete{
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+
+  #page-list{
+    /*display: block;*/
+    width: 80%;
+    float: right;
+
+  }
+  #page-list .page{
+    width: 164px;
+    margin: auto;
+  }
+  #page-list a{
+    float: left;
+    margin-top: 20px;
+    margin-left: 10px;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    border: solid 1px black;
+    cursor: pointer;
+    display: block;
+    line-height: 30px;
+  }
+
+  #page-list a.turn-left{
+    margin-left: 0;
+  }
+
+}

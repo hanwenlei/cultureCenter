@@ -2,9 +2,9 @@ if (process.env.NODE_ENV !== 'production') {
 	require('../view/login.html')
 }
 
-import '../sass/login.scss';
-import common from './common/common.js';
-import warning from './function/warning.js';
+import '../sass/login.scss'
+import common from './common/common.js'
+import warning from './function/warning.js'
 
 
 $(document).ready(function() {
@@ -46,19 +46,19 @@ $(document).ready(function() {
 	}
 
 	$.ajax({
-//		url: common.url + '/logIn',
-		url: '/api/news/logIn',
+		url: common.url + '/logIn',
 		type: 'POST',
 		contentType:"application/json",
 		data: JSON.stringify({
-			'username': $('#login .input_container .username').val(),
-			'password': $('#login .input_container .password').val(),
-			'code': $('#login .input_container .ver_code').val(),
-			'authority': auth
+			"username": $('#login .input_container .username').val(),
+			"password": $('#login .input_container .password').val(),
+			"code": $('#login .input_container .ver_code').val(),
+			"authority": auth
 		}),
 		withCredentials:true
 	})
 	.done(function(res) {
+		console.log($('#login .input_container .ver_code').val());
 		if(res === 'SUCCESS'){
 			window.location = turnTo;
 		}else if(res === 'USERNAME_OR_PASSWORD_ERROR' || 'AUTH_ERROR'){
@@ -74,8 +74,7 @@ $(document).ready(function() {
 
 function getCode(){
 	$.ajax({
-//		url: common.url + '/getCode',
-		url: '/api/news/getCode',
+		url: common.url + '/getCode',
 		type: 'GET',
 		header:{
 			'Access-Control-Allow-Origin': '*'

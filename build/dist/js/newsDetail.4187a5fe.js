@@ -1,1 +1,0 @@
-webpackJsonp([9],{0:function(n,e){n.exports={proxy:"https://www.eunieunieuni.xin/",url:"/news"}},42:function(n,e,t){"use strict";Object.defineProperty(e,"__esModule",{value:!0});var u=t(43),i=(t.n(u),t(0));t.n(i)},43:function(n,e){}},[42]);

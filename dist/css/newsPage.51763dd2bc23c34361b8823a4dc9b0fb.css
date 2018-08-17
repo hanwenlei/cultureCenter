@@ -1,0 +1,7 @@
+.weeks>ul {
+  list-style: none;
+}
+
+.weeks li {
+  float: left;
+}

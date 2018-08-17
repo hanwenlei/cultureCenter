@@ -1,0 +1,81 @@
+.title {
+  font-size: x-large;
+  background-color: #da441f;
+  color: white;
+  text-align: center;
+  width: 25%;
+  height: 30px; }
+
+span.details {
+  float: left;
+  height: 30px;
+  line-height: 30px;
+  background-color: #313131;
+  color: white;
+  width: 75%;
+  display: block;
+  text-align: center; }
+
+span.title {
+  display: block;
+  float: left; }
+
+#content {
+  width: 1000px;
+  margin: auto; }
+  #content #introduct p {
+    margin-top: 0;
+    border-bottom: 1px solid #da441f; }
+  #content #introduct .details {
+    margin-top: 10px; }
+  #content #units {
+    margin-top: 30px; }
+    #content #units .details div {
+      text-align: center;
+      background-color: #313131;
+      color: white;
+      border-bottom: 1px solid #A0A0A0;
+      height: 30px;
+      line-height: 30px; }
+  #content #connect {
+    margin-top: 30px; }
+    #content #connect .tel {
+      margin-top: 10px;
+      overflow: hidden; }
+    #content #connect .fox {
+      margin-top: 30px;
+      overflow: hidden; }
+  #content #address {
+    margin-top: 30px;
+    overflow: hidden; }
+  #content #leader .title {
+    margin-top: 40px; }
+  #content #leader p {
+    margin-top: 30px; }
+  #content #leader .details {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    overflow: hidden; }
+    #content #leader .details img {
+      width: 200px;
+      height: 200px;
+      float: left; }
+    #content #leader .details .high {
+      color: #da441f;
+      margin-right: 10px;
+      font-size: large;
+      margin-left: 20px; }
+    #content #leader .details .detail {
+      margin-left: 20px;
+      margin-top: 30px;
+      font-size: small;
+      opacity: 0.75; }
+    #content #leader .details .address {
+      margin-left: 20px;
+      margin-top: 100px;
+      font-size: small; }
+    #content #leader .details .tel {
+      margin-left: 20px;
+      font-size: small; }
+
+/*# sourceMappingURL=introduction.css.map */

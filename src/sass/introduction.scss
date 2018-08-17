@@ -1,0 +1,118 @@
+
+
+.title{
+  font-size: x-large;
+  background-color: #da441f;
+  color: white;
+  text-align: center;
+  width: 25%;
+  height: 30px;
+}
+
+span.details{
+  float: left;
+  height: 30px;
+  line-height: 30px;
+  background-color: #313131;
+  color: white;
+  width: 75%;
+  display: block;
+  text-align: center;
+}
+
+span.title{
+  display: block;
+  float: left;
+}
+
+#content{
+  width: 1000px;
+  margin: auto;
+  #introduct{
+
+    p{
+      margin-top: 0;
+      border-bottom: 1px solid #da441f;
+    }
+    .details{
+      margin-top: 10px;
+    }
+  }
+
+
+  #units{
+    margin-top: 30px;
+    .details{
+      div{
+        text-align: center;
+        background-color: #313131;
+        color: white;
+        border-bottom: 1px solid #A0A0A0;
+        height: 30px;
+        line-height: 30px;
+      }
+    }
+  }
+
+  #connect{
+    margin-top: 30px;
+    .tel{
+      margin-top: 10px;
+      overflow: hidden;
+
+
+    }
+    .fox{
+      margin-top: 30px;
+      overflow: hidden;
+
+    }
+  }
+
+  #address{
+    margin-top: 30px;
+    overflow: hidden;
+  }
+
+  #leader{
+    .title{
+      margin-top: 40px;
+    }
+    p{
+      margin-top: 30px;
+    }
+    .details{
+      margin-top: 10px;
+      margin-bottom: 20px;
+      overflow: hidden;
+      img{
+        width: 200px;
+        height: 200px;
+        float: left;
+      }
+      .high{
+        color: #da441f;
+        margin-right: 10px;
+        font-size: large;
+        margin-left: 20px;
+      }
+      .detail{
+        margin-left: 20px;
+        margin-top: 30px;
+        font-size: small;
+        opacity: 0.75;
+
+      }
+      .address{
+        margin-left: 20px;
+        margin-top: 100px;
+        font-size: small;
+      }
+      .tel{
+        margin-left: 20px;
+        font-size: small;
+      }
+
+    }
+  }
+}

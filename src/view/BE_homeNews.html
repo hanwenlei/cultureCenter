@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/lib/bootstrap.min.css">
+</head>
+<body>
+
+    <div id="content" >
+
+        <div class="table_title">
+            <div class="item">
+                <div class="title">标题</div>
+                <div class="contributor">投稿人</div>
+                <div class="date">日期</div>
+                <div class="status">状态</div>
+                <div class="operation">操作</div>
+            </div>
+        </div>
+
+        <v-page-content v-bind:number="pageNumber"></v-page-content>
+        <v-page-list></v-page-list>
+
+    </div>
+<script type="text/javascript" src="../js/lib/jquery-3.3.1.min.js"></script>
+<script src="../js/lib/vue.js"></script>
+</body>
+</html>

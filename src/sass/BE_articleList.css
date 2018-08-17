@@ -1,0 +1,256 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  min-width: 1280px; }
+
+@font-face {
+  font-family: titlefont;
+  src: url("../assets/font/font.ttf"); }
+#navigator {
+  background-color: #db4520;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  width: 100%;
+  min-width: 1200px;
+  height: 112px;
+  border-bottom: 1px solid #ad3214;
+  line-height: 1.5; }
+  #navigator .left {
+    display: flex;
+    flex-flow: row;
+    margin: 16px 0 16px 84px; }
+    #navigator .left .title_container {
+      margin: 8px 0 0 12px;
+      color: #fff;
+      font-family: 'MicrosoftYaHei'; }
+      #navigator .left .title_container .school_name {
+        font-size: 14px;
+        font-family: titlefont; }
+      #navigator .left .title_container .org_name {
+        font-size: 16px;
+        margin-top: 2px;
+        font-family: titlefont; }
+      #navigator .left .title_container .alias_name {
+        font-size: 12px;
+        margin-top: 2px;
+        font-family: titlefont; }
+  #navigator .right {
+    margin: 0 84px 0 0;
+    line-height: 112px; }
+    #navigator .right .nav {
+      margin: 0; }
+      #navigator .right .nav .nav_item {
+        float: left;
+        position: relative;
+        list-style-type: none; }
+        #navigator .right .nav .nav_item:hover .lists {
+          opacity: 1;
+          transform: translate(0, 0); }
+        #navigator .right .nav .nav_item li {
+          list-style: none;
+          cursor: pointer; }
+        #navigator .right .nav .nav_item a {
+          color: #fff;
+          text-decoration: none;
+          display: block;
+          font-size: 20px;
+          margin: 0 25px 0; }
+          #navigator .right .nav .nav_item a.active {
+            color: #0b1a23; }
+          #navigator .right .nav .nav_item a:hover {
+            color: #0b1a23; }
+        #navigator .right .nav .nav_item .lists {
+          transition: opacity 0.5s, transform 0.5s;
+          padding: 0;
+          position: absolute;
+          transform: translate(0, -20%);
+          top: 100%;
+          width: 100%;
+          opacity: 0;
+          z-index: 9999;
+          text-align: center;
+          background: #db4520;
+          color: #fff; }
+          #navigator .right .nav .nav_item .lists li {
+            height: 60px;
+            line-height: 60px; }
+            #navigator .right .nav .nav_item .lists li a {
+              height: 100%;
+              margin: 0; }
+  #navigator .exit {
+    color: white;
+    font-size: 14px;
+    cursor: pointer; }
+    #navigator .exit:hover {
+      color: black; }
+    #navigator .exit a {
+      color: white;
+      text-decoration: none; }
+
+#sidebar {
+  min-width: 130px;
+  width: 20%;
+  margin: 0;
+  background-color: #525256; }
+  #sidebar .lists {
+    background-color: #525256;
+    width: 100%;
+    color: #feffff;
+    margin: 0;
+    padding: 0;
+    text-align: center; }
+    #sidebar .lists .item {
+      list-style-type: none;
+      height: 81px;
+      box-sizing: border-box;
+      padding: 25px 0;
+      border-bottom: 1px solid #7d8586; }
+      #sidebar .lists .item a {
+        color: #feffff;
+        font-size: 28px;
+        text-decoration: none;
+        font-weight: 300; }
+      #sidebar .lists .item.active {
+        background-color: #7d8586; }
+
+#warning {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 10%;
+  height: 48px;
+  line-height: 48px;
+  font-size: 20px;
+  background-color: #6a6d6f;
+  border-radius: 10px;
+  padding: 0px 60px;
+  color: white;
+  opacity: 0;
+  cursor: pointer;
+  will-change: opacity;
+  transition: opacity 1s ease-out; }
+  #warning.active {
+    opacity: 1; }
+
+body {
+  height: auto; }
+
+#warning {
+  bottom: 18%; }
+
+.container {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-start;
+  background-color: #f1f1f1;
+  min-height: 884px; }
+  .container #sidebar {
+    min-width: 130px;
+    width: 20%;
+    margin: 0;
+    background-color: #525256; }
+    .container #sidebar .lists {
+      background-color: #525256;
+      width: 100%;
+      color: #feffff;
+      margin: 0;
+      padding: 0;
+      text-align: center; }
+      .container #sidebar .lists .item {
+        list-style-type: none;
+        height: 81px;
+        box-sizing: border-box;
+        padding: 25px 0;
+        border-bottom: 1px solid #7d8586; }
+        .container #sidebar .lists .item a {
+          color: #feffff;
+          font-size: 28px;
+          text-decoration: none;
+          font-weight: 300; }
+        .container #sidebar .lists .item.active {
+          background-color: #7d8586; }
+  .container input {
+    height: 40px;
+    border-radius: 5px;
+    margin: 0;
+    padding: 0;
+    width: 100%; }
+  .container #articleList {
+    transform: translate(0, 0);
+    margin: 81px 0 0 9%;
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    position: relative;
+    /*min-width: 1151px;*/
+    min-width: 65%; }
+    .container #articleList .table_title {
+      border-top: 1px dashed black;
+      background-color: #eee; }
+    .container #articleList .table_title, .container #articleList .table_body {
+      font-weight: 600;
+      display: flex;
+      flex-flow: column;
+      font-size: 20px;
+      color: #373737; }
+      .container #articleList .table_title .item, .container #articleList .table_body .item {
+        border-left: 1px dashed black;
+        border-right: 1px dashed black;
+        display: flex;
+        flex-flow: row;
+        height: 55px;
+        line-height: 55px; }
+        .container #articleList .table_title .item .title, .container #articleList .table_body .item .title {
+          flex: 563;
+          padding: 0 10px 0; }
+        .container #articleList .table_title .item .contributor, .container #articleList .table_body .item .contributor {
+          flex: 141; }
+        .container #articleList .table_title .item .date, .container #articleList .table_body .item .date {
+          flex: 194; }
+        .container #articleList .table_title .item .status, .container #articleList .table_body .item .status {
+          flex: 140; }
+        .container #articleList .table_title .item .operation, .container #articleList .table_body .item .operation {
+          flex: 120; }
+        .container #articleList .table_title .item .title, .container #articleList .table_title .item .contributor, .container #articleList .table_title .item .date, .container #articleList .table_title .item .status, .container #articleList .table_body .item .title, .container #articleList .table_body .item .contributor, .container #articleList .table_body .item .date, .container #articleList .table_body .item .status {
+          border-right: 1px solid black;
+          overflow-x: scroll;
+          overflow-y: scroll;
+          white-space: nowrap;
+          overflow: -moz-scrollbars-none;
+          -ms-overflow-style: none; }
+          .container #articleList .table_title .item .title::-webkit-scrollbar, .container #articleList .table_title .item .contributor::-webkit-scrollbar, .container #articleList .table_title .item .date::-webkit-scrollbar, .container #articleList .table_title .item .status::-webkit-scrollbar, .container #articleList .table_body .item .title::-webkit-scrollbar, .container #articleList .table_body .item .contributor::-webkit-scrollbar, .container #articleList .table_body .item .date::-webkit-scrollbar, .container #articleList .table_body .item .status::-webkit-scrollbar {
+            display: none; }
+        .container #articleList .table_title .item:nth-child(even), .container #articleList .table_body .item:nth-child(even) {
+          background-color: #eee; }
+    .container #articleList .table_body .item:last-child {
+      border-bottom: 1px dashed black; }
+    .container #articleList .table_body .item .operation {
+      color: #db4520; }
+      .container #articleList .table_body .item .operation .review, .container #articleList .table_body .item .operation .delete {
+        cursor: pointer; }
+    .container #articleList .table_selector {
+      padding: 60px 0 75px;
+      font-size: 20px;
+      display: flex;
+      flex-flow: row;
+      justify-content: center; }
+      .container #articleList .table_selector span {
+        background: white;
+        display: inline-block;
+        padding: 5px 12px;
+        border: 1px solid #e7e7e7;
+        border-radius: 5px;
+        margin: 0 5px;
+        cursor: pointer; }
+        .container #articleList .table_selector span.selected {
+          background-color: rgba(0, 0, 0, 0);
+          border: 0;
+          color: #db4520; }
+
+/*# sourceMappingURL=BE_articleList.css.map */

@@ -1,0 +1,245 @@
+body,html {
+  height: 100%;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul li {
+  margin-top: 20px;
+}
+
+#content {
+  margin: auto;
+  width: 800px;
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#content,#content #news-predict {
+  height: 80%;
+}
+
+#content #turn-pages {
+  height: 10%;
+}
+
+#content .add-news,#content .delete {
+  border: 1px solid #db3d24;
+  color: #db3d24;
+  margin: 5px;
+  width: 50px;
+  height: 25px;
+  font-size: 10px;
+  line-height: 25px;
+  text-align: center;
+  cursor: pointer;
+}
+
+#content .add-news:hover,#content .delete:hover {
+  background-color: #db3d24;
+  color: #efefef;
+}
+
+#content #news-predict li {
+  height: 30%;
+}
+
+#content #news-predict li>div {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+#content #news-predict li>div img {
+  height: 100%;
+  width: 30%;
+  line-height: 90%;
+  float: left;
+  margin-left: 30px;
+}
+
+#content #news-predict li>div .text {
+  float: right;
+  width: 65%;
+  height: 100%;
+}
+
+#content #news-predict li>div .text .float-r {
+  float: right;
+  width: 75px;
+  height: 100%;
+  overflow: hidden;
+}
+
+#content #news-predict li>div .text .float-r .week-days {
+  float: right;
+  margin-right: 20px;
+  margin-top: -10px;
+  z-index: 10;
+}
+
+#content #news-predict li>div .text .float-r .week {
+  z-index: 100;
+  color: #efefef;
+  position: relative;
+  left: 23px;
+  font-size: 15px;
+  font-weight: 300;
+  top: -50%;
+  width: 25px;
+  height: 50px;
+}
+
+#content #news-predict li>div .text .float-r .delete {
+  float: right;
+  margin-right: 10px;
+  margin-top: 20px;
+}
+
+#content #news-predict li>div .text header,#content #news-predict li>div .text p {
+  position: relative;
+}
+
+#content #turn-pages {
+  width: 130px;
+  margin: auto;
+  overflow: hidden;
+}
+
+#content #turn-pages .pages {
+  float: left;
+  margin-right: 30px;
+  margin-left: 30px;
+}
+
+#content #turn-pages .pages li {
+  padding-left: 10px;
+  padding-right: 10px;
+  line-height: 20px;
+  margin-top: 0;
+  cursor: pointer;
+  color: #999;
+}
+
+#content #turn-pages .pages .to-page {
+  color: #000;
+}
+
+#content #turn-pages .pages .light {
+  color: red;
+}
+
+#content #turn-pages img {
+  width: 20px;
+  height: 20px;
+  float: left;
+  cursor: pointer;
+}
+
+.none {
+  display: none;
+}
+
+#change-news .selector,#change-news input {
+  height: 40px;
+  border-radius: 5px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+
+#change-news .turn-back {
+  overflow: hidden;
+}
+
+#change-news .turn-back img,#change-news .turn-back p {
+  float: left;
+}
+
+#change-news .choose {
+  overflow: hidden;
+  height: 40px;
+}
+
+#change-news .choose p {
+  float: left;
+  margin-bottom: 0;
+}
+
+#change-news .choose .selector {
+  float: left;
+  position: relative;
+  width: 80%;
+  margin-left: 30px;
+}
+
+#change-news .choose .selector input {
+  cursor: pointer;
+}
+
+#change-news .choose .selector .lists {
+  text-align: center;
+  display: none;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  z-index: 10002;
+}
+
+#change-news .choose .selector .lists.active {
+  display: block;
+}
+
+#change-news .choose .selector .lists .item {
+  padding: 5px 0;
+  cursor: pointer;
+  list-style-type: none;
+  border-bottom: 1px solid #000;
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+}
+
+#change-news .choose .selector .lists .item:nth-child(odd) {
+  background-color: #f1f1f1;
+}
+
+#change-news .choose .selector .lists .item:nth-child(2n) {
+  background-color: #fff;
+}
+
+#change-news .choose .selector .lists .item:first-child {
+  border-top: 1px solid #000;
+}
+
+#change-news .news-select .table {
+  width: 80%;
+  margin: auto;
+}
+
+#change-news .news-select .table .info p.change {
+  border: 1px solid #db3d24;
+  color: #db3d24;
+  margin: 5px;
+  width: 50px;
+  height: 25px;
+  font-size: 10px;
+  line-height: 25px;
+  text-align: center;
+  cursor: pointer;
+}
+
+#change-news .news-select .table .info p.change:hover {
+  background-color: #db3d24;
+  color: #efefef;
+}

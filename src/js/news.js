@@ -1,206 +1,107 @@
-//模块热更新
 if (process.env.NODE_ENV !== 'production') {
     require('../view/news.html')
 }
+import '../sass/news.scss'
+import common from './common/common.js'
+import axios from 'axios'
 
-import '../sass/news.scss';
-import common from './common/common.js';
+var src=window.location.href
+var indexID=src.indexOf("?")
+var id=src.substring(indexID+4)
+console.log(id)
 
-var gindex = 1;
-const gtypeName = ['新闻公示', '精彩回顾', '活动预告', '成电辩坛', '成电舞台', '成电故事', '成电影院', '成电栋梁', 
-				'成电讲坛', '成电百家', '其他新闻'];
 
-$(document).ready(function ()
-{
+var title = {
+    template: '<div id="news-title"><div class="title"><span>|</span>{{article.title}}</div> <div class="details"><span class="author"><em>作者：</em>{{article.reporter}}</span><span class="pic-author"><em>照片作者：</em>{{article.photographer}}</span><span class="gover"><em>部门：</em>{{article.department}}</span><span class="date"><em>发布时间：</em>{{article.publicAt}}</span><span class="click-rate"><em>点击量：</em>{{article.click}}</span> </div> </div>',
+    props:['article'],
 
-//    let url = window.location.href.split('#');
-//    gindex = parseInt(url[1]);
-    $("#newsType").text(gtypeName[gindex]);
-    $.ajax(
-    {
-        url: common.url + '/getNotice',
-        type: 'GET',
-    })
-    .done(function(res)
-    {
-        console.log("success");
-        var news = res[gindex];
-        var flag = false;
-        var index = 0;
-        for(var i = 0; i < news.length; i++)
-        {
-        		if(news[i].cover !== null)
-        		{
-        			if(index >= 4) continue;
-        			var item = $(".newsContent").eq(index);
-        			item.children('.title').text(news[i].title);
-        			item.children('.time').text(news[i].publicAt);
-        			item.children('.content').text(news[i].summary);
-        			item.children('.newsPic').attr('src', news[i].cover);
-        			index++;
-        		}
-        		else
-        		{
-        			if(index >= 4)
-        			{
-        				if(flag === true) break;
-        			}
-        			else
-        			{
-        				if(flag === true) continue;
-        			}
-        			var item = $(".newsContent").eq(5);
-        			item.children('.title').text(news[i].title);
-        			item.children('.time').text(news[i].publicAt);
-        			item.children('.content').text(news[i].summary);
-        			flag = true;
-        		}
+};
+
+var content={
+    template: '<div id=content> <div class="content"></div> </div>',
+    props:['article'],
+    data:function () {
+        return{
+            essay:""
         }
-        var pageNumber = Math.ceil(news.length/5);
-        $(".totalPages").text("总页数：	" + pageNumber);
-    })
+    },
+    watch: {
+        article:function () {
+                // content = this.article.essay
+                // console.log(this.article)
+                // content = content.substring(1,content.length-2)
+                $("#content .content")[0].innerHTML+=this.article.essay
+        }
 
+
+        // return{
+        //     essay:content
+        // }
+    }
+}
+
+
+var types={
+    template:'<div id="type-title"> <ul><li>分类标题</li><li v-for="i in list"  ><a v-on:onmouseover="onChangeLight(i)" v-bind:class="{light:isHighLight[i-1]}">{{littleTitles[i-1]}}</a></li></ul> </div>',
+    data:function () {
+
+        return{
+            list:7,
+            littleTitles:['小标题','小标题','小标题','小标题','小标题','小标题','小标题'],
+            isHighLight:[true,false,false,false,false,false,false]
+        }
+    },
+    methods:{
+        onChangeLight:function (i) {
+            console.log("<a><b class='a'></b></a>"-"<b class='a'></b>")
+            if($(".light")[0].innerHTML.indexOf("div")>=0){
+                var a=$(".light")[0].innerHTML
+                var b=a.indexOf("<div")
+                var c=a.indexOf("</div>")
+                a=a.substring(0,b)+a.substring(c,a.length-1)
+                $(".light")[0].innerHTML=a
+                // $(".light")[0].innerHTML-='<div class="detail">...</div>'
+            }
+
+
+            var a=this.isHighLight.indexOf(true)
+            i=i-1
+            Vue.set(this.isHighLight,a,false)
+            Vue.set(this.isHighLight,i,true)
+            console.log(i)
+            $("#type-title li a")[i].innerHTML+="<div class='detail'>...</div>"
+            // console.log($(".light")[0].innerHTML)
+        }
+    }
+}
+// $(".light")[0].innerHTML+="<div class='detail'>...</div>"
+var newsPage = new Vue({
+    el: "#news-content",
+    data: function () {
+        var essay={
+            title:'',
+            reportor:'',
+            photographer:'',
+            department:'',
+            publicAt:'',
+            click:''
+        }
+        axios.get(common.url+'/getArticle',{
+            params:{
+                'id':id
+            }
+
+        }).then((response) => {
+            this.article=response.data
+            // console.log(this.article)
+        })
+        return {
+            article: essay
+        }
+    },
+    components: {
+        'v-title': title,
+        'v-content': content,
+        'v-type':types
+    }
 });
-
-$(".btn").click(function()
-{
-    var page = $("#pageInput").val();
-    if(page === "") return;
-    $.ajax(
-    {
-        url: common.url + '/getNotice',
-        type: 'GET',
-    })
-    .done(function(res)
-    {
-        console.log("success");
-        var news = res[gindex];
-        if(page > news.length/5) return;
-        var flag = false;
-        var index = 0;
-        for(var i = page*5; i < news.length; i++)
-        {
-        		if(news[i].cover !== null)
-        		{
-        			if(index >= 4) continue;
-        			var item = $(".newsContent").eq(index);
-        			item.children('.title').text(news[i].title);
-        			item.children('.time').text(news[i].publicAt);
-        			item.children('.content').text(news[i].summary);
-        			item.children('.newsPic').attr('src', news[i].cover);
-        			index++;
-        		}
-        		else
-        		{
-        			if(index >= 4)
-        			{
-        				if(flag === true) break;
-        			}
-        			else
-        			{
-        				if(flag === true) continue;
-        			}
-        			var item = $(".newsContent").eq(5);
-        			item.children('.title').text(news[i].title);
-        			item.children('.time').text(news[i].publicAt);
-        			item.children('.content').text(news[i].summary);
-        			flag = true;
-        		}
-        }
-        $("#pageNumber").text(page.toString());
-    })
-})
-
-$(".MovePage1").click(function()
-{
-    var page = $("#pageNumber").val();
-    if(page <= 1) return;
-    $.ajax(
-    {
-        url: common.url + '/getNotice',
-        type: 'GET',
-    })
-    .done(function(res)
-    {
-        console.log("success");
-        var news = res[gindex];
-        var flag = false;
-        var index = 0;
-        for(var i = (page-1)*5; i < news.length; i++)
-        {
-        		if(news[i].cover !== null)
-        		{
-        			if(index >= 4) continue;
-        			var item = $(".newsContent").eq(index);
-        			item.children('.title').text(news[i].title);
-        			item.children('.time').text(news[i].publicAt);
-        			item.children('.content').text(news[i].summary);
-        			item.children('.newsPic').attr('src', news[i].cover);
-        			index++;
-        		}
-        		else
-        		{
-        			if(index >= 4)
-        			{
-        				if(flag === true) break;
-        			}
-        			else
-        			{
-        				if(flag === true) continue;
-        			}
-        			var item = $(".newsContent").eq(5);
-        			item.children('.title').text(news[i].title);
-        			item.children('.time').text(news[i].publicAt);
-        			item.children('.content').text(news[i].summary);
-        			flag = true;
-        		}
-        }
-    })
-})
-
-$(".MovePage2").click(function()
-{
-    var page = $("#pageNumber").val();
-    $.ajax(
-    {
-        url: common.url + '/getNotice',
-        type: 'GET',
-    })
-    .done(function(res)
-    {
-        console.log("success");
-        var news = res[gindex];
-        if(page >= news.length/5) return;
-        var flag = false;
-        var index = 0;
-        for(var i = (page+1)*5; i < news.length; i++)
-        {
-        		if(news[i].cover !== null)
-        		{
-        			if(index >= 4) continue;
-        			var item = $(".newsContent").eq(index);
-        			item.children('.title').text(news[i].title);
-        			item.children('.time').text(news[i].publicAt);
-        			item.children('.content').text(news[i].summary);
-        			item.children('.newsPic').attr('src', news[i].cover);
-        			index++;
-        		}
-        		else
-        		{
-        			if(index >= 4)
-        			{
-        				if(flag === true) break;
-        			}
-        			else
-        			{
-        				if(flag === true) continue;
-        			}
-        			var item = $(".newsContent").eq(5);
-        			item.children('.title').text(news[i].title);
-        			item.children('.time').text(news[i].publicAt);
-        			item.children('.content').text(news[i].summary);
-        			flag = true;
-        		}
-        }
-    })
-})

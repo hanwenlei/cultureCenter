@@ -2,12 +2,12 @@ if (process.env.NODE_ENV !== 'production') {
 	require('../view/BE_review.html')
 }
 
-import '../sass/BE_review.scss';
+import '../sass/BE_review.scss'
 
 import common from './common/common.js';
-import getUrlParam from './function/getUrlParam.js';
-import running from './function/warning.js';
-import './components/navigator.js';
+import getUrlParam from './function/getUrlParam.js'
+import running from './function/warning.js'
+import './components/navigator.js'
 
 import './components/BE_dropdown.js';
 

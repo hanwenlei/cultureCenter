@@ -16,8 +16,10 @@ const glob = require('glob-all')
 const PurifyCSS = require('purifycss-webpack')
 
 const CDN_URL = 'https://lifengjun.xin/cultureCenter'
-const pageName = ['index', 'Team', 'mediaLib','login', 'news', 'newsDetail','leadershipEducation','newsPage','artEducation',
-    'BE_carousel', 'BE_accountInfo','BE_review', 'BE_edit', 'BE_articleList'];
+const pageName = ['index', 'Team', 'mediaLib',
+    'login', 'BE_carousel', 'BE_accountInfo',
+    'BE_review', 'BE_edit', 'BE_articleList','newsPage',
+    'news','BE_homeNews','office','introduction'];
 
 const generateConfig = env => {
     var FontUrlLoaderPublicPath,
@@ -98,17 +100,16 @@ const generateConfig = env => {
             'Team': './src/js/Team.js',
             'mediaLib': './src/js/mediaLib.js',
             'login': './src/js/login.js',
-            'news': './src/js/news.js',
-            'newsDetail': './src/js/newsDetail.js',
-            'newsPage': './src/js/newsPage.js',
-            'leadershipEducation': './src/js/leadershipEducation.js',
-            'artEducation': './src/js/artEducation.js',
             'BE_carousel': './src/js/BE_carousel.js',
             'BE_accountInfo': './src/js/BE_accountInfo.js',
             'BE_review': './src/js/BE_review.js',
             'BE_edit': './src/js/BE_edit.js',
             'BE_articleList': './src/js/BE_articleList.js',
-
+            'newsPage':'./src/js/newsPage.js',
+            'news':'./src/js/news.js',
+            'BE_homeNews':'./src/js/BE_homeNews.js',
+            'office':'./src/js/office.js',
+            'introduction':'./src/js/introduction.js',
             'jquery': './src/js/lib/jquery-3.3.1.min.js'
         },
 

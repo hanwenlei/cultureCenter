@@ -11,3 +11,31 @@
 @import './pages/index/Team';
 @import './pages/index/Institution';
 
+
+body{
+  height: 100%;
+
+}
+
+#first{
+  height: 100%;
+}
+
+#navigator{
+  height: 15%;
+}
+
+#carousel{
+  height: 85%;
+  .carousel-inner{
+    height: 100%;
+    .carousel-item{
+      height: 100%!important;
+    }
+  }
+
+}
+.d-block{
+  height: 100%;
+  width: 100%;
+}

@@ -2,13 +2,13 @@ if (process.env.NODE_ENV !== 'production') {
 	require('../view/BE_carousel.html')
 }
 
-import '../sass/BE_carousel.scss';
+import '../sass/BE_carousel.scss'
 
-import common from './common/common.js';
-import EventUtil from './common/EventUtil.js';
+import common from './common/common.js'
+import EventUtil from './common/EventUtil.js'
 
-import createObjectURL from './function/createObjectURL.js';
-import warning from './function/warning.js';
+import createObjectURL from './function/createObjectURL.js'
+import warning from './function/warning.js'
 
 import './components/navigator.js'
 
@@ -26,8 +26,7 @@ $(document).ready(function() {
 	 * 返回的地址是含有服务器目录的/root/apache-tomcat-8.5.16/webapps/news/carousel/0b7375df-6049-4e16-a80e-c75493083011.jpg
 	 */
 	 $.ajax({
-//	 	url: common.url + '/getVisibleCarousel',
-		url: '/api/news/getVisibleCarousel',
+	 	url: common.url + '/getVisibleCarousel',
 	 	type: 'GET',
 	 })
 	 .done(function(res) {
@@ -49,8 +48,7 @@ $(document).ready(function() {
 	 */
 	 function getAllCarousel() {
 	 	$.ajax({
-//	 		url: common.url + '/getAllCarousel',
-	 		url: '/api/news/getAllCarousel',
+	 		url: common.url + '/getAllCarousel',
 	 		type: 'GET',
 	 	})
 	 	.done(function(res) {
@@ -135,8 +133,7 @@ $(document).ready(function() {
 	 		 		// console.log($(this).attr('data-id'));
 	 		 		// console.log(newPathUpload);
 	 		 		$.ajax({
-//	 		 			url: common.url + '/changeVisible',
-	 		 			url: '/api/news/changeVisible',
+	 		 			url: common.url + '/changeVisible',
 	 		 			type: 'POST',
 	 		 			data: {
 	 		 				"newPath": newPathUpload,
@@ -171,8 +168,7 @@ $(document).ready(function() {
 	 		 		pathDelete = '/home/ubuntu/' + newPath.substring(stringNumber);
 	 		 		console.log(pathDelete);
 	 		 		$.ajax({
-//	 		 			url: common.url + '/deleteCarousel',
-	 		 			url: '/api/news/deleteCarousel',
+	 		 			url: common.url + '/deleteCarousel',
 	 		 			type: 'POST',
 	 		 			data: {'oldPath': pathDelete},
 	 		 		})
@@ -237,8 +233,7 @@ $(document).ready(function() {
 					console.log(data.formatFileSize);
 					// console.log(common.url);
 					$.ajax({
-//						url: common.url + '/uploadCarousel',
-						url: '/api/news/uploadCarousel',
+						url: common.url + '/uploadCarousel',
 						type: 'POST',
 						data: data,
 						// photo:files,

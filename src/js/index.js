@@ -5,14 +5,14 @@ if (process.env.NODE_ENV !== 'production') {
     require('../view/index.html')
 }
 
-import common from './common/common.js';
-import '../sass/index.scss';
+import common from './common/common.js'
+import '../sass/index.scss'
 
 $(document).ready(function () {
 
     for (var i=0;i<6;i++){
         $("#display .item:eq('"+i+"')").css("background-image","url(\"../assets/imgs/index/"+(15+i)+".jpg\")");
-        console.log($("#display .item:eq('"+i+"')").css("background-image"));
+        // console.log($("#display .item:eq('"+i+"')").css("background-image"));
     }
 
     window.requestAnimFrame = (function () {
@@ -67,7 +67,7 @@ $(document).ready(function () {
             if(i<=res.length)
             {
                 var strNum=res[i].indexOf('img');
-                var imgPath="http://222.197.183.55:8080/news/"+res[i].substring(strNum);
+                var imgPath="http://222.197.183.55:8080/news"+res[i].substring(strNum);
                 console.log(imgPath);
                 $(".d-block")[i].src=imgPath;
             }

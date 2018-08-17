@@ -1,0 +1,97 @@
+html, body {
+  height: 100%; }
+
+#com {
+  height: 100%; }
+
+#news {
+  display: flex;
+  width: 100%;
+  height: 40px; }
+
+#news a {
+  flex: 1;
+  display: block;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+  background-color: #313131;
+  color: white; }
+
+a.light {
+  background-color: #656565 !important; }
+
+a.lighting {
+  color: red;
+  border: none !important; }
+
+#side-bar {
+  width: 20%;
+  height: 100%;
+  background-color: #656565;
+  float: left;
+  margin-right: 0; }
+
+#side-bar div {
+  display: none; }
+
+#side-bar .dis {
+  display: block; }
+
+#side-bar a {
+  display: block;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+  background-color: #313131;
+  color: white; }
+
+#page-list {
+  /*display: block;*/
+  width: 80%;
+  float: right; }
+
+#page-list .page {
+  width: 164px;
+  margin: auto; }
+
+#page-list a {
+  float: left;
+  margin-top: 20px;
+  margin-left: 10px;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  border: solid 1px black;
+  cursor: pointer;
+  display: block;
+  line-height: 30px; }
+
+#page-list a.turn-left {
+  margin-left: 0; }
+
+#page-content {
+  width: 80%;
+  margin-top: 20px;
+  float: right; }
+  #page-content .content {
+    list-style: none;
+    padding-left: 0;
+    width: 80%;
+    margin: auto; }
+    #page-content .content li {
+      background-color: #969696;
+      overflow: hidden;
+      padding-top: 3px;
+      padding-bottom: 3px; }
+      #page-content .content li a {
+        float: left;
+        overflow: hidden;
+        width: 100%; }
+      #page-content .content li span.title {
+        float: left; }
+      #page-content .content li span.article {
+        float: right; }
+
+/*# sourceMappingURL=newsPage.css.map */

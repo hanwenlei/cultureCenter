@@ -7,15 +7,18 @@
 	.left{
 		display: flex;
 		flex-flow: column;
-		padding: 40px 441px 40px 0;
+		padding: 40px 331px 40px 30px;
+		width: 100%;
 		.top{
 			display: flex;
 			flex-flow: row;
 			span{
 				padding: 0 25px;
 				display: block;
+				font-size: 1vw;
 				&.line{
 					border-right: 1px solid #f0ca4d;
+
 				}
 				&:first-child{
 					padding-left: 0;

@@ -1,0 +1,72 @@
+#content {
+  width: 1000px;
+  margin: auto; }
+  #content #title {
+    overflow: hidden; }
+    #content #title .title {
+      font-size: xx-large;
+      float: right; }
+  #content #office-content .title {
+    border-top: 2px solid #da441f; }
+    #content #office-content .title h3 {
+      width: 200px;
+      background-color: #da441f;
+      color: white;
+      font-size: large;
+      font-weight: 600;
+      text-align: center;
+      margin-top: 0; }
+    #content #office-content .title ul li {
+      margin-top: 15px; }
+  #content #address {
+    margin-top: 20px;
+    overflow: hidden;
+    box-sizing: border-box; }
+    #content #address .address {
+      width: 25%;
+      background-color: #da441f;
+      height: 32px;
+      font-size: x-large;
+      color: white;
+      text-align: center;
+      float: left; }
+    #content #address .detail {
+      float: left;
+      width: 75%;
+      height: 32px;
+      background-color: #313131;
+      color: white;
+      text-align: center;
+      line-height: 32px; }
+  #content #connect {
+    margin-top: 20px;
+    overflow: hidden;
+    box-sizing: border-box;
+    height: 32px; }
+    #content #connect .connect {
+      float: left;
+      width: 25%;
+      background-color: #da441f;
+      font-size: x-large;
+      color: white;
+      text-align: center; }
+    #content #connect .name {
+      float: left;
+      background-color: #313131;
+      color: white;
+      text-align: center;
+      line-height: 32px;
+      width: 37.5%; }
+      #content #connect .name span {
+        text-align: right;
+        color: #858585;
+        float: right; }
+    #content #connect .tel {
+      float: left;
+      background-color: #313131;
+      color: white;
+      text-align: center;
+      line-height: 32px;
+      width: 37.5%; }
+
+/*# sourceMappingURL=office.css.map */

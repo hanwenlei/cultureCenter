@@ -1,5 +1,4 @@
-# This is a simple web station.
-## cultureCenter
+# cultureCenter
 ``` bash
 # install dependencies
 npm install

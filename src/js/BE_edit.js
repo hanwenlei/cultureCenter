@@ -2,12 +2,12 @@ if (process.env.NODE_ENV !== 'production') {
 	require('../view/BE_edit.html')
 }
 
-import '../sass/BE_edit.scss';
-import common from './common/common.js';
+import '../sass/BE_edit.scss'
+import common from './common/common.js'
 
-import './components/navigator.js';
+import './components/navigator.js'
 import './components/BE_dropdown.js';
-import warning from './function/warning.js';
+import warning from './function/warning.js'
 
 $(document).ready(function() {
 	var E = window.wangEditor;

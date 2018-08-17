@@ -1,4 +1,4 @@
-const ExtractTextPlugin = require('extract-text-webpack-plugin')
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const HtmlInlineChunkPlugin = require('html-webpack-inline-chunk-plugin')
 const CleanWebpackPlugin = require('clean-webpack-plugin')
@@ -25,16 +25,14 @@ const config = {
 		'Team': './src/js/Team.js',
 		'mediaLib': './src/js/mediaLib.js',
 		'login': './src/js/login.js',
-		'news': './src/js/news.js',
-		'newsDetail': './src/js/newsDetail.js',
-		'newsPage': './src/js/newsPage.js',
-		'leadershipEducation': './src/js/leadershipEducation.js',
-		'artEducation': './src/js/artEducation.js',
 		'BE_carousel': './src/js/BE_carousel.js',
 		'BE_accountInfo': './src/js/BE_accountInfo.js',
 		'BE_review': './src/js/BE_review.js',
 		'BE_edit': './src/js/BE_edit.js',
 		'BE_articleList': './src/js/BE_articleList.js',
+        'news':'./src/js/news.js',
+		'newsPage': './src/js/newsPage.js',
+		'BE_homeNews':'./src/js/homeNews.js',
 
 		'jquery': './src/js/lib/jquery-3.3.1.min.js'
 	},
@@ -46,13 +44,8 @@ const config = {
 		// publicPath: 'https://lifengjun.xin/cultureCenter' //production
 	},
 
-	// resolve: {
-	// 	alias: {
- //      			'vue$': 'vue/dist/vue.js',
-	// 	}
-	// },
 
-	module: {
+    module: {
 		rules: [
 		{
 			test: /\.html$/,
@@ -146,7 +139,7 @@ const config = {
 
 	new webpack.optimize.UglifyJsPlugin(),
 	
-	//脤谩脠隆鹿芦鹿虏麓煤脗毛
+	//提取公共代码
 	new webpack.optimize.CommonsChunkPlugin({
 		name: 'manifest',
 		minChunks: Infinity
@@ -187,11 +180,10 @@ const config = {
 	],
 }
 
-const pageName = ['index', 'Team', 'mediaLib', 'login', 'news', 'newsDetail','leadershipEducation','newsPage','artEducation',
-				'BE_carousel', 'BE_accountInfo', 'BE_review', 'BE_edit', 'BE_articleList'];
+const pageName = ['index', 'Team', 'mediaLib', 'login', 'BE_carousel', 'BE_accountInfo', 'BE_review', 'BE_edit', 'BE_articleList','newsPage'];
 AddHTMLWebpackPlugin(pageName);
 
-//驴陋路垄禄路戮鲁
+//开发环境
 if(isDev){
 	config.devtool =  "cheap-module-eval-source-map"
 	config.devServer = {
